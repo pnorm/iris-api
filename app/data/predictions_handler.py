@@ -1,7 +1,6 @@
 import joblib
 from loguru import logger
 
-from .models import *
 from .data_preparation import *
 
 @logger.catch()
@@ -9,7 +8,7 @@ def get_predictions(
     filename, sepal_length, sepal_width, petal_length, petal_width
 ):
     # Load saved standardising object
-    scaler = joblib.load("scaler.joblib")
+    scaler = joblib.load("data/scaler.joblib")
     logger.debug("Scaler succesfully loaded.")
 
     # Load saved classification model
