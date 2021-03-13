@@ -16,7 +16,7 @@ class ModelName(str, Enum):
 
 # Initiate logging
 log_format = "{time} | {level} | {message} | {file} | {line} | {function} | {exception}"
-logger.add(sink='app/data/log_files/logs.log', format=log_format, level='DEBUG', compression='zip')
+logger.add(sink='data/log_files/logs.log', format=log_format, level='DEBUG', compression='zip')
 
 
 app = FastAPI(title="What type of iris is it?", version="1.0",
