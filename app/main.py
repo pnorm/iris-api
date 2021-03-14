@@ -23,7 +23,7 @@ app = FastAPI(title="What type of iris is it?", version="1.0",
               description="Setosa, versicolor or virginica?")
 
 
-@app.post("/predict")
+@app.get("/predict")
 @logger.catch()
 async def get_prediction(
     model_name: ModelName, sepal_length: float, sepal_width: float,
