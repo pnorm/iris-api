@@ -22,3 +22,5 @@ $ git clone https://github.com/pnorm/iris-api.git
 ```
 
 ### 5. Go to the 127.0.0.1:8000/docs address in your browser
+
+![Screeen record](https://raw.githubusercontent.com/pnorm/iris-api/master/app/img/screenrecord.gif)
